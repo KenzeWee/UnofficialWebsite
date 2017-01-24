@@ -6,20 +6,28 @@
     <title>WCD art page</title>
     <link rel="stylesheet" type="text/css" href="Main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
+    
+    <span onclick="openNav()">&#9776;</span>
     
 <body class="art-page">
     <div class="background" ></div>
     <!-- navigation bar-->
     <nav>
         <ul>
-            <li><a href="index.html" class="art-page" id="homeimg"><img src="assets/home.png" alt="hello" ></a></li>
-            <li><a href="about-me.html" class="art-page">About</a></li>
-            <li><a href="art-page.html" class="art-page active">Art</a></li>
-            <li><a href="contact-me.html" class="art-page">Contact</a></li>
-            <li><a href="resume-page.html" class="art-page">Resume</a></li>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html" class="art-page" id="homeimg"><img src="assets/home.png" alt="home"></a></li>
+                <a href="about-me.html" class="art-page">About</a>
+                <a href="art-page.html" class="art-page active">Art</a>
+                <a href="contact-me.html" class="art-page">Contact</a>
+                <a href="resume-page.html" class="about-me">Resume</a>
+                <br><br><br><br><br><br><br><p>T. +65 9782 6983 / kenzewee@gmail.com</p>
+                <hr><p>&#169; 2016 Kenze Wee. All rights reserved.</p>
+            </div>
         </ul>
-    </nav>  
+    </nav> 
     
     <article>
         
@@ -36,6 +44,7 @@
     </article>
 
     <script src="./about-me.js"></script>
+    <script src="./navbar.js"></script>
         
 </body>
 </html>

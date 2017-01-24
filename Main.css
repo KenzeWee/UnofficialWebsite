@@ -1,12 +1,9 @@
 /*----------------------------------------Navigation bar---------------------------------------*/
-
-/*about me nav bar*/
-
 nav {
     font-family: homizio;
     font-size: 1.5em;
     color: #ffffff;
-    z-index: 2000;
+    z-index: 20000;
     padding: 0;
     text-align: center;
     
@@ -14,245 +11,290 @@ nav {
     display: block;
 }
 
-.about-me ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
+.sidenav {
+    height: 100%;
+    width: 0;
     position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%;
     left: 0;
-    height: 7.5%;
-    word-spacing: 10px;
-    z-index: 10000;
+    background-color: #111111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818881;
+    display: block;
+    transition: 0.4s
+}
+
+.sidenav a:hover{
+    color: #f1f1ff;
+}
+
+/*about me nav bar*/
+
+.sidenav .closebtn {
+    left: 93%;
+    position: absolute;
+    top: auto;
+    font-size: 60px;
 }
 
 .about-me li {
-    height: 100%;
-    float: left;
+    height: 50px;
+    width: auto;
     z-index: 10000;
     display: relative;
+    color: #f1f1f1;
 }
 
 .about-me li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 15px;
     text-decoration: none;
     font-size: 1em;
-    word-spacing: 10px;
     z-index: 10000;
 }
 
 .about-me li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
 
-.about-me.active {
-    background-color: #969696;
-    z-index: 10000;
+.about-me .active {
+        color: #ffffff;
 }
 
-.about-me ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
+.about-me span{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 45px;
     position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    height: 7.5%;
-    word-spacing: 10px;
+    right: 95%;
+    top: 10%;
     z-index: 10000;
+    opacity: 10%;
+}
+
+.about-me span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
+}
+
+/*showcase-page nav bar*/
+
+.showcase-page .sidenav .closebtn {
+    left: 93%;
+    position: absolute;
+    bottom: 90%;
+    font-size: 60px;
+}
+
+.showcase-page .about-me li {
+    height: 50px;
+    width: auto;
+    z-index: 10000;
+    display: relative;
+    color: #f1f1f1;
+}
+
+.showcase-page .about-me li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 10000;
+}
+
+.showcase-page .about-me li a:hover {
+    background-color: rgba(255, 255, 255, 0.005);
+    z-index: 10000;
+}
+
+.showcase-page .active {
+        color: #ffffff;
+}
+
+.showcase-page span{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 45px;
+    position: fixed;
+    right: 95%;
+    bottom: 91%;
+    z-index: 10000;
+    opacity: 10%;
+}
+
+.showcase-page span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
 }
 
 /*art-page nav bar*/
 
-.art-page li {
-    height: 100%;
-    float: left;
-    z-index: 10000;
-    display: relative;
+.art-page .sidenav .closebtn {
+    left: 93%;
+    position: absolute;
+    bottom: 90%;
+    font-size: 60px;
 }
 
-.art-page li a {
+.art-page .about-me li {
+    height: 50px;
+    width: auto;
+    z-index: 10000;
+    display: relative;
+    color: #f1f1f1;
+}
+
+.art-page .about-me li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 15px;
     text-decoration: none;
     font-size: 1em;
-    word-spacing: 10px;
     z-index: 10000;
 }
 
-.art-page li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.art-page .about-me li a:hover {
+    background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
 
-.art-page.active {
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 10000;
+.art-page .active {
+        color: #ffffff;
 }
 
-.art-page ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #bbbbbb;
+.art-page span{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 45px;
     position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    height: 7.5%;
-    word-spacing: 10px;
+    right: 95%;
+    bottom: 91%;
     z-index: 10000;
+    opacity: 10%;
 }
 
-/*showcase page nav bar*/
+.art-page span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
+}
 
-.showcase-page li {
-    height: 100%;
-    float: left;
+/*contact-me nav bar*/
+
+.contact-me .sidenav .closebtn {
+    left: 93%;
+    position: absolute;
+    bottom: 90%;
+    font-size: 60px;
+}
+
+.contact-me art-page .about-me li {
+    height: 50px;
+    width: auto;
     z-index: 10000;
     display: relative;
+    color: #f1f1f1;
 }
 
-.showcase-page li a {
+.contact-me .about-me li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 15px;
     text-decoration: none;
     font-size: 1em;
-    word-spacing: 10px;
     z-index: 10000;
 }
 
-.showcase-page li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.contact-me .about-me li a:hover {
+    background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
 
-.showcase-page.active {
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 10000;
+.contact-me .active {
+        color: #ffffff;
 }
 
-.showcase-page ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    height: 7%;
-    word-spacing: 10px;
-    z-index: 10000;
-}
-
-/*contact me nav bar*/
-
-.contact-me li {
-    height: 100%;
-    float: left;
-    z-index: 10000;
-    display: relative;
-}
-
-.contact-me li a {
-    display: block;
+.contact-me span{
+    cursor: pointer;
     color: #ffffff;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
-    font-size: 1em;
-    word-spacing: 10px;
-    z-index: 10000;
-}
-
-.contact-me li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 1000;
-}
-
-.contact-me.active {
-    background-color: #969696;
-    z-index: 1000;
-}
-
-.contact-me ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 45px;
     position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    height: 7.5%;
-    word-spacing: 10px;
-    z-index: 1000;
+    right: 95%;
+    bottom: 91%;
+    z-index: 10000;
+    opacity: 10%;
+}
+
+.contact-me span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
 }
 
 /*resume-page nav bar*/
 
-.resume-page li {
-    height: 100%;
-    float: left;
-    z-index: 10000;
-    display: relative;
+.resume-page .sidenav .closebtn {
+    left: 93%;
+    position: absolute;
+    bottom: 90%;
+    font-size: 60px;
 }
 
-.resume-page li a {
+.resume-page art-page .about-me li {
+    height: 50px;
+    width: auto;
+    z-index: 10000;
+    display: relative;
+    color: #f1f1f1;
+}
+
+.resume-page .about-me li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 15px;
     text-decoration: none;
     font-size: 1em;
-    word-spacing: 10px;
     z-index: 10000;
 }
 
-.resume-page li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.resume-page .about-me li a:hover {
+    background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
 
-.resume-page.active {
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 10000;
+.resume-page .active {
+        color: #ffffff;
 }
 
-.resume-page ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.5);
+.resume-page span{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 45px;
     position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    height: 7%;
-    word-spacing: 10px;
+    right: 95%;
+    bottom: 91%;
     z-index: 10000;
+    opacity: 10%;
 }
-  
-/*responsive nav bar font size code*/
+
+.resume-page span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
+}
+  /*
+/*responsive nav bar font size code
 
     @media only screen and (max-width: 600px) {
         .about-me nav { font-size:1em;}
@@ -270,7 +312,7 @@ nav {
         .resume-page nav { font-size:1em;}
         }
 
-/*responsive nav bar height code*/
+/*responsive nav bar height code
 
     @media only screen and (max-width: 600px) {
         .about-me ul {height: 7%;}
@@ -286,26 +328,115 @@ nav {
         }
     @media only screen and (max-width: 600px) {
         .resume-page ul {height: 7%;}
+        }*/
+
+/*responsive navbar code*/
+
+    @media only screen and (max-width: 1100px) {
+            .about-me .sidenav .closebtn {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            .about-me span{
+                font-size: 45px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
         }
 
-/*responsive nav bar home imgcode*/
-
-    @media only screen and (max-width: 1279px) {
-        #homeimg {
-            text-align: center;
-            vertical-align: middle;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-        nav #homeimg img { width: 80%;
-                           height: auto;
-                           display: inline-block;
-            padding-top: 40%
-        }
+    @media screen and (max-height: 450px) {
+            .about-me .sidenav {padding-top: 15px;}
+            .about-me .sidenav a {font-size: 18px;}
         }
 
+    @media only screen and (max-width: 1100px) {
+            .art-page .sidenav .closebtn {
+                padding: 0;
+                font-size: 50px;
+                padding-bottom: 5px;
+                left: 90%;
+                text-align: center;
+            }
+        
+            .art-page span{
+                font-size: 35px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
+        }
+
+    @media screen and (max-height: 450px) {
+            .art-page .sidenav {padding-top: 15px;}
+            .art-page .sidenav a {font-size: 18px;}
+        }
+
+    @media only screen and (max-width: 1100px) {
+            .showcase-page .sidenav .closebtn {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            .showcase-page span{
+                font-size: 45px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
+        }
+
+    @media screen and (max-height: 450px) {
+            .showcase-page .sidenav {padding-top: 15px;}
+            .showcase-page .sidenav a {font-size: 18px;}
+        }
+
+    @media only screen and (max-width: 1100px) {
+            .contact-me .sidenav .closebtn {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            .contact-me span{
+                font-size: 45px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
+        }
+
+    @media screen and (max-height: 450px) {
+            .contact-me .sidenav {padding-top: 15px;}
+            .contact-me .sidenav a {font-size: 18px;}
+        }
+
+    @media only screen and (max-width: 1100px) {
+            .resume-page .sidenav .closebtn {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            .resume-page span{
+                font-size: 45px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
+        }
+
+    @media screen and (max-height: 450px) {
+            .resume-page .sidenav {padding-top: 15px;}
+            .resume-page .sidenav a {font-size: 18px;}
+        }
 /*----------------------------------------Ids and classes---------------------------------------*/
 
 /*frontpage*/
@@ -353,8 +484,7 @@ nav {
 #Text {
     position: absolute;
     text-align: center;
-    overflow: hidden;
-    margin: auto;
+    overflow: auto;
     left: 0;
     right: 0;
     bottom: 0;
@@ -370,20 +500,20 @@ nav {
     position: relative;
     width: 100vw;
     height: auto;
-    margin-top: 4em;
 }
 
 #profile-pic img {
     margin: auto;
     width: auto;
-    height: 6em;
+    height: 5em;
     padding: 0;
     width: auto;
     height: auto;
 }
 
 #profile-pic:hover > img {
-  filter: blur(2px) brightness(160%);
+  filter: brightness(160%);
+  filter: blur(40%);
 }
 
 .about-me{
@@ -393,7 +523,6 @@ nav {
     width: auto;
     max-width: 90ch;
     height: auto;
-    padding: 0;
     display: inline-block;
 }
 
@@ -413,7 +542,6 @@ nav {
     font-size: 1.5em;
     color: #ffffff;
     z-index: 2000;
-    padding: 0;
     text-align: center;
     
     position: relative;
@@ -794,10 +922,12 @@ main.container {
         .showcase-page section { font-size:1.2em;}
         }
     @media only screen and (max-width: 1279px) {
-        #art-pic img { width:80%;
+        .art-pic img { width:80%;
                        height: auto;
-                        top:80%;}
+                       text-align: center;
+                       top:80%;}
         }
+
 
 /*resumepage*/
 
@@ -1261,5 +1391,10 @@ body.frontpage {
 }
 
 
-/* ??????? */
+/*Stopping the bloody webpage from moving everywhere*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 

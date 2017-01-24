@@ -1,4 +1,4 @@
 @echo off
 git add *
-git commit -m "niggas"
+git commit -m "commit"
 git push origin master
