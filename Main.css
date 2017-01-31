@@ -95,11 +95,11 @@ nav {
 .showcase-page .sidenav .closebtn {
     left: 93%;
     position: absolute;
-    bottom: 90%;
+    top: auto;
     font-size: 60px;
 }
 
-.showcase-page .about-me li {
+.showcase-page li {
     height: 50px;
     width: auto;
     z-index: 10000;
@@ -107,7 +107,7 @@ nav {
     color: #f1f1f1;
 }
 
-.showcase-page .about-me li a {
+.showcase-page li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -116,7 +116,7 @@ nav {
     z-index: 10000;
 }
 
-.showcase-page .about-me li a:hover {
+.showcase-page li a:hover {
     background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
@@ -131,9 +131,9 @@ nav {
     font-size: 45px;
     position: fixed;
     right: 95%;
-    bottom: 91%;
-    z-index: 10000;
+    top: 10%;
     opacity: 10%;
+    z-index: 10;
 }
 
 .showcase-page span:hover {
@@ -150,7 +150,7 @@ nav {
     font-size: 60px;
 }
 
-.art-page .about-me li {
+.art-page li {
     height: 50px;
     width: auto;
     z-index: 10000;
@@ -158,7 +158,7 @@ nav {
     color: #f1f1f1;
 }
 
-.art-page .about-me li a {
+.art-page li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -167,7 +167,7 @@ nav {
     z-index: 10000;
 }
 
-.art-page .about-me li a:hover {
+.art-page li a:hover {
     background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
@@ -183,7 +183,7 @@ nav {
     position: fixed;
     right: 95%;
     bottom: 91%;
-    z-index: 10000;
+    z-index: 10;
     opacity: 10%;
 }
 
@@ -201,7 +201,7 @@ nav {
     font-size: 60px;
 }
 
-.contact-me art-page .about-me li {
+.contact-me li {
     height: 50px;
     width: auto;
     z-index: 10000;
@@ -209,7 +209,7 @@ nav {
     color: #f1f1f1;
 }
 
-.contact-me .about-me li a {
+.contact-me li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -218,7 +218,7 @@ nav {
     z-index: 10000;
 }
 
-.contact-me .about-me li a:hover {
+.contact-me li a:hover {
     background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
@@ -252,7 +252,7 @@ nav {
     font-size: 60px;
 }
 
-.resume-page art-page .about-me li {
+.resume-page li {
     height: 50px;
     width: auto;
     z-index: 10000;
@@ -260,7 +260,7 @@ nav {
     color: #f1f1f1;
 }
 
-.resume-page .about-me li a {
+.resume-page li a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -269,7 +269,7 @@ nav {
     z-index: 10000;
 }
 
-.resume-page .about-me li a:hover {
+.resume-page sli a:hover {
     background-color: rgba(255, 255, 255, 0.005);
     z-index: 10000;
 }
@@ -366,7 +366,7 @@ nav {
                 font-size: 35px;
                 position: fixed;
                 left: 2%;
-                z-index: 10000;
+                z-index: 10;
             }
         }
 
@@ -387,7 +387,7 @@ nav {
                 font-size: 45px;
                 position: fixed;
                 left: 2%;
-                z-index: 10000;
+                z-index: 10;
             }
         }
 
@@ -878,11 +878,10 @@ main.container {
 }
 
 .showcase-page header {
-    font: 5.5em BebasNeue, sans-serif;
+    font: 4.5em BebasNeue, sans-serif;
     color: #ffffff;
     z-index: 2000;
     text-align: center;
-    margin-top: 1em; 
     margin-bottom: 0;
     top: 50%;
 }
@@ -890,7 +889,7 @@ main.container {
 .showcase-page section {
     font-family: homizio;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #000000;
     z-index: 2000;
     padding: 0;
     text-align: center;
@@ -902,7 +901,7 @@ main.container {
 .showcase-page section date{
     font-family: homizio;
     font-size: 0.8em;
-    color: #ffffff;
+    color: #000000;
     z-index: 2000;
     padding: 0;
     text-align: center;
