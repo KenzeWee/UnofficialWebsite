@@ -293,43 +293,7 @@ nav {
     color: #f1f1ff;
     opacity: 50%;
 }
-  /*
-/*responsive nav bar font size code
-
-    @media only screen and (max-width: 600px) {
-        .about-me nav { font-size:1em;}
-        }   
-    @media only screen and (max-width: 600px) {
-        .art-page nav { font-size:1em;}
-        }   
-    @media only screen and (max-width: 600px) {
-        .showcase-page nav { font-size:0.8em;}
-        } 
-    @media only screen and (max-width: 600px) {
-        .contact-me nav { font-size:1em;}
-        }
-    @media only screen and (max-width: 600px) {
-        .resume-page nav { font-size:1em;}
-        }
-
-/*responsive nav bar height code
-
-    @media only screen and (max-width: 600px) {
-        .about-me ul {height: 7%;}
-        }  
-    @media only screen and (max-width: 600px) {
-        .art-page ul {height: 7%;}
-        }
-    @media only screen and (max-width: 600px) {
-        .showcase-page ul {height: 7.6%;}
-        }
-    @media only screen and (max-width: 600px) {
-        .contact-me ul {height: 7%;}
-        }
-    @media only screen and (max-width: 600px) {
-        .resume-page ul {height: 7%;}
-        }*/
-
+  
 /*responsive navbar code*/
 
     @media only screen and (max-width: 1100px) {
@@ -479,6 +443,7 @@ nav {
     z-index: 1500;
 }
 
+
 /*aboutme*/
 
 #Text {
@@ -585,6 +550,10 @@ nav {
     @media only screen and (max-width: 1279px) {
         .about-me section { font-size:1.2em;}
         }
+    @media only screen and (max-width: 600px) {
+        #profile-pic img { width: 75%;}
+        }
+
 
 /*artpage*/
 
@@ -857,12 +826,6 @@ main.container {
     width: auto;
     height: auto;
     right: 40%;
-    filter: blur(0) brightness(100%);
-    transition: all 0.7s;
-}
-
-.art-pic > a:hover > img {
-  filter: blur(3px) brightness(150%);
 }
 
 .showcase-page{
@@ -899,15 +862,12 @@ main.container {
 }
 
 .showcase-page section date{
-    font-family: homizio;
     font-size: 0.8em;
-    color: #000000;
-    z-index: 2000;
-    padding: 0;
-    text-align: center;
-    
-    position: relative;
-    display: block;
+}
+
+.showcase-page section cap{
+    font-style: italic;
+    font-size: 0.9em;
 }
 
     @media (max-width: 1279px) {
@@ -1167,7 +1127,7 @@ body.frontpage {
     bottom: 0;
     left: 0;
     width: auto;
-    
+    filter: blur(1px);
     
     position: fixed;
 
@@ -1239,8 +1199,6 @@ body.frontpage {
     bottom: 0;
     left: 0;
     width: auto;
-    
-    
     position: fixed;
 
     background: url("assets/mech2.gif") no-repeat center center fixed;

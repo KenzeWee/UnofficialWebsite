@@ -323,7 +323,7 @@ Portfolio Projects
   /* this is the project image cover layer - this is visible only during a rotation of the parallelepiped (while the project is disappearing) */
   z-index: 3;
   height: 100%;
-  background: black;
+  background: #242424;
   opacity: 0;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
@@ -638,6 +638,12 @@ Back to top
   opacity: 1;
 }
 .cd-top:hover {
-  background-color: 242424;
+  background-color: #242424;
   opacity: 1;
 }
+
+/* -------------------------------- 
+
+Extra stuff
+
+-------------------------------- */
