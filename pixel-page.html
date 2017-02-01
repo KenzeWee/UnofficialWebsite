@@ -1,69 +1,175 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="assets/faviconicon.jpg">
     <title>WCD Pixel art</title>
-    <link rel="stylesheet" type="text/css" href="Main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="3d-portfolio-template/js/modernizr.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="3d-portfolio-template/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="3d-portfolio-template/css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="Main.css"> <!-- Main style -->
 </head>
     
-    <span onclick="openNav()">&#9776;</span>
+                    <span onclick="openNav()" class="showcase-page">&#9776;</span>
     
 <body class="showcase-page">
-    <div class="background" ></div>
     <!-- navigation bar-->
     <nav>
         <ul>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <li><a href="index.html" class="showcase-page" id="homeimg"><img src="assets/home.png" alt="home"></a></li>
-                <a href="about-me.html" class="showcase-page">About</a>
-                <a href="art-page.html" class="showcase-page active">Art</a>
-                <a href="contact-me.html" class="showcase-page">Contact</a>
-                <a href="resume-page.html" class="showcase-page">Resume</a>
+                <li><a href="index.html" class="art-page" id="homeimg"><img src="assets/home.png" alt="home"></a></li>
+                <a href="about-me.html" class="art-page">About</a>
+                <a href="art-page.html" class="art-page active">Art</a>
+                <a href="contact-me.html" class="art-page">Contact</a>
+                <a href="resume-page.html" class="about-me">Resume</a>
                 <a href="art-page.html" class="showcase-page">Back</a>
                 <br><br><br><br><br><br><br><p>T. +65 9782 6983 / kenzewee@gmail.com</p>
                 <hr><p>&#169; 2016 Kenze Wee. All rights reserved.</p>
             </div>
         </ul>
-    </nav>
-    
-    <article><br><br>
-            
-            
-            <div class="art-pic">
-        <a href="https://www.behance.net/gallery/42878001/The-lonely-Samurai-(gif)"><img src="assets/samurai%20gif.gif" alt="samurai" class="showcase-page"></a>
-            </div>
+    </nav> 
+</body>
+        
+<body class="cd-3d-portfolio"> 
+  <div class="cd-3d-portfolio">
+	<nav class="cd-3d-portfolio-navigation">
+		<div class="cd-wrapper">
+			<h1></h1>
+		</div>
+	</nav> <!-- .cd-3d-portfolio-navigation -->
+        
+	<div class="projects">
+		<ul class="row">
+			<li class="front-face selected project-3">
+				<div class="project-wrapper">
+					<div class="project-image">
+						<div class="project-title">
+							<header>samurai</header>
+						</div>
+					</div> <!-- .project-image -->
 
-                    <header>
-                        <i>Samurai</i> 
-                    </header> 
-        
-                    <section>                       
-                            <hr><small><i>Published: September 16, 2016</i></small><br>
-                            The drawing of this project was done in photoshop and then the layers were sent to Hexels and animated as well as adding dittering and other small details. Completed in 12 hours.<br><br>Inspired by the artists KiroKaze and Cosmino Galluzzi.<br><br><small><u>Click the image to see the full project on my Behance page.</u></small>
-                            <hr> 
-                    </section>
-            
-            <div class="art-pic">
-        <a href=https://www.behance.net/gallery/42382801/The-forest-(gif)><img src="assets/forest.gif" alt="forest" class="showcase-page"></a>
-            </div>        
+				<div class="project-content">
+                                   
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/42878001/The-lonely-Samurai-(gif)"><img src="assets/samurai.gif" alt="samurai" class="showcase-page"></a>
+                        </div>
                     
-                    <header>
-                        <i>forest</i> 
-                    </header> 
-        
-                    <section>                       
-                            <hr><small><i>Published: September 3, 2016</i></small><br>
-                            Done entirely Hexels and touched up in photoshop within the span of 6 hours(yes again).<br><br>Inspired by the game Badlands and the artist Wanella.<br><br><small><u>Click the image to see the full project on my Behance page.</u></small>
-                            <hr>     
-                    </section>    
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/42878001/The-lonely-Samurai-(gif)"><img src="assets/samuraidetailtop.png" alt="samuraidetail1" class="showcase-page"></a>
+                        </div>
+                        
+                         <section> 
+                             <i><cap>Detail for the tree</cap></i>
+                         </section>
+                    
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/42878001/The-lonely-Samurai-(gif)"><img src="assets/samuraidetailbottom.png" alt="samuraidetail2" class="showcase-page"></a>
+                        </div>
+                        
+                         <section> 
+                             <i><cap>Detail for the Samurai</cap></i>
+                         </section>
+                    
+                        <p>
+                         <section>                       
+                            <hr>
+                            <i><date>Published: September 16, 2016</date></i></small><br>
+                            The drawing of this project was done in photoshop and then the layers were sent to Hexels and animated as well as adding dittering and other small details.<br>Done in 12 hours.<br>Inspired by the artists KiroKaze and Cosmino Galluzzi. 
+                            <br><br><small><u>Click any of the images to see the full project on my Behance page.</u>
+                            <br><br>
+                            <hr>
+                          </section>
+                        </p>
+					</div> <!-- .project-content -->
+
+					<a href="#0" class="close-project">Close</a>
+				</div> <!-- .project-wrapper -->
+			</li>
+		</ul> <!-- .row -->
+	
+		<ul class="row">
+			<li class="front-face selected project-6">
+				<div class="project-wrapper">
+					<div class="project-image">
+						<div class="project-title">
+							<header>forest</header>
+						</div>
+					</div> <!-- .project-image -->
+
+					<div class="project-content">
+                                   
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/42382801/The-forest-(gif)"><img src="assets/forest.gif" alt="forest" class="showcase-page"></a>
+                        </div>
+                    
+                        <p>
+                         <section>                       
+                            <hr>
+                            <i><date>Published: September 11, 2016</date></i></small><br>
+                            Done entirely Hexels and touched up in photoshop within the span of 6 hours(yes again).<br>Inspired by the game Badlands and the artist Wanella.<br><br><small><u>Click any of the images to see the full project on my Behance page.</u>
+                            <br><br>
+                            <hr>
+                          </section>
+                        </p>
+					</div> <!-- .project-content -->
+
+					<a href="#0" class="close-project">Close</a>
+				</div> <!-- .project-wrapper -->
+			</li>
+		</ul> <!-- .row -->
+
+		<ul class="row">
+			<li class="front-face selected project-9">
+				<div class="project-wrapper">
+					<div class="project-image">
+						<div class="project-title">
+							<header>night shift</header>
+						</div>
+					</div> <!-- .project-image -->
+
+				<div class="project-content">
+                                   
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/43361893/The-night-shift-(gif)"><img src="assets/nightshift.gif" alt="nightshift" class="showcase-page"></a>
+                        </div>
+                    
+                        <div class="art-pic">
+                <a href="https://www.behance.net/gallery/42878001/The-lonely-Samurai-(gif)"><img src="assets/nightshiftprocess.gif" alt="nightshiftprocess" class="showcase-page"></a>
+                        </div>
+                        
+                         <section> 
+                             <i><cap>Drawing process</cap></i>
+                         </section>
+                        <p>
+                            
+                         <section>                       
+                            <hr>
+                            <i><date>Published: September 29, 2016</date></i></small><br>
+                            A little project to help myself improve on my animating skills as well as learn proper shading and lighting techniques.<br>The main objects were done entirely in Photoshop and animated in Hexels.<br>Inspired by the game Gunpoint as well as the artist Kirokaze.s
+                            <br><br><small><u>Click the image to see the full project on my Behance page.</u>
+                            <br><br>
+                            <hr>
+                          </section>
+                        </p>
+					</div> <!-- .project-content -->
+
+					<a href="#0" class="close-project">Close</a>
+				</div> <!-- .project-wrapper -->
+			</li>
+		</ul> <!-- .row -->
+
+	</div><!-- .projects -->
+        	<a href="#0" class="cd-top">Top</a>
+  </div>
     
-    </article>
-    
-    <script src="./about-me.js"></script>
-    <script src="./navbar.js"></script>
+    <script src="3d-portfolio-template/js/jquery-3.0.0.min.js"></script>
+    <script>
+	   if( !window.jQuery ) document.write('<script src="3d-portfolio-template/js/jquery-3.0.0.min.js"><\/script>');
+    </script>
+<script src="3d-portfolio-template/js/main.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
