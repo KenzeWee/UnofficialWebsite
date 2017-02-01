@@ -345,17 +345,20 @@ Portfolio Projects
   filter: blur(3px) grayscale(50%) brightness(70%);
 }
 .cd-3d-portfolio .projects .row > li.project-2 .project-image::before {
-  background-image: url(../../assets/mountain.jpg);
+  background-image: url(../../assets/portal.jpg);
+  filter: blur(3px) grayscale(50%) brightness(70%);
 }
+
 .cd-3d-portfolio .projects .row > li.project-3 .project-image::before {
   background-image: url(../img/photo-3.jpg);
 }
 .cd-3d-portfolio .projects .row > li.project-4 .project-image::before {
   background-image: url(../../assets/turtle.jpg);
-    filter: blur(3px) grayscale(50%) brightness(70%);
+  filter: blur(3px) grayscale(50%) brightness(70%);
 }
 .cd-3d-portfolio .projects .row > li.project-5 .project-image::before {
-  background-image: url(../img/photo-5.jpg);
+  background-image: url(../../assets/relax2.jpg);
+  filter: blur(3px) grayscale(50%) brightness(70%);
 }
 .cd-3d-portfolio .projects .row > li.project-6 .project-image::before {
   background-image: url(../img/photo-6.jpg);
@@ -365,7 +368,8 @@ Portfolio Projects
   filter: blur(3px) grayscale(50%) brightness(70%);
 }
 .cd-3d-portfolio .projects .row > li.project-8 .project-image::before {
-  background-image: url(../img/photo-8.jpg);
+  background-image: url(../../assets/window.jpg);
+  filter: blur(3px) grayscale(50%) brightness(70%);
 }
 .cd-3d-portfolio .projects .row > li.project-9 .project-image::before {
   background-image: url(../img/photo-9.jpg);
