@@ -11,7 +11,7 @@ nav {
     display: block;
 }
 
-.sidenav {
+.nav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -26,7 +26,7 @@ nav {
     text-align: center;
 }
 
-.sidenav a {
+.nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -35,13 +35,13 @@ nav {
     transition: 0.4s
 }
 
-.sidenav a:hover{
+.nav a:hover{
     color: #f1f1ff;
 }
 
 /*about me nav bar*/
 
-.sidenav .closebtn {
+.nav .closebtn {
     left: 93%;
     position: absolute;
     top: auto;
@@ -92,7 +92,7 @@ nav {
 
 /*showcase-page nav bar*/
 
-.showcase-page .sidenav .closebtn {
+.showcase-page .nav .closebtn {
     left: 93%;
     position: absolute;
     top: auto;
@@ -143,7 +143,7 @@ nav {
 
 /*art-page nav bar*/
 
-.art-page .sidenav .closebtn {
+.art-page .nav .closebtn {
     left: 93%;
     position: absolute;
     bottom: 90%;
@@ -194,7 +194,7 @@ nav {
 
 /*contact-me nav bar*/
 
-.contact-me .sidenav .closebtn {
+.contact-me .nav .closebtn {
     left: 93%;
     position: absolute;
     bottom: 90%;
@@ -245,7 +245,7 @@ nav {
 
 /*resume-page nav bar*/
 
-.resume-page .sidenav .closebtn {
+.resume-page .nav .closebtn {
     left: 93%;
     position: absolute;
     bottom: 90%;
@@ -293,11 +293,63 @@ nav {
     color: #f1f1ff;
     opacity: 50%;
 }
+
+/*survey-page nav bar*/
+
+.survey-page .nav .closebtn {
+    left: 93%;
+    position: absolute;
+    top: auto;
+    font-size: 60px;
+}
+
+.survey-page li {
+    height: 50px;
+    width: auto;
+    z-index: 10000;
+    display: relative;
+    color: #f1f1f1;
+}
+
+.survey-page li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 10000;
+}
+
+.survey-page li a:hover {
+    background-color: rgba(255, 255, 255, 0.005);
+    z-index: 10000;
+}
+
+.survey-page .active {
+        color: #ffffff;
+}
+
+.survey-page span{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 45px;
+    position: fixed;
+    right: 95%;
+    top: 10%;
+    opacity: 10%;
+    z-index: 10;
+}
+
+.survey-page span:hover {
+    color: #f1f1ff;
+    opacity: 50%;
+}
+
   
 /*responsive navbar code*/
 
     @media only screen and (max-width: 1100px) {
-            .about-me .sidenav .closebtn {
+            .about-me .nav .closebtn {
                 padding: 0;
                 padding-right: 50px;
                 font-size: 50px;
@@ -313,12 +365,12 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .about-me .sidenav {padding-top: 15px;}
-            .about-me .sidenav a {font-size: 18px;}
+            .about-me .nav {padding-top: 15px;}
+            .about-me .nav a {font-size: 18px;}
         }
 
     @media only screen and (max-width: 1100px) {
-            .art-page .sidenav .closebtn {
+            .art-page .nav .closebtn {
                 padding: 0;
                 font-size: 50px;
                 padding-bottom: 5px;
@@ -335,12 +387,12 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .art-page .sidenav {padding-top: 15px;}
-            .art-page .sidenav a {font-size: 18px;}
+            .art-page .nav {padding-top: 15px;}
+            .art-page .nav a {font-size: 18px;}
         }
 
     @media only screen and (max-width: 1100px) {
-            .showcase-page .sidenav .closebtn {
+            .showcase-page .nav .closebtn {
                 padding: 0;
                 padding-right: 50px;
                 font-size: 50px;
@@ -356,12 +408,12 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .showcase-page .sidenav {padding-top: 15px;}
-            .showcase-page .sidenav a {font-size: 18px;}
+            .showcase-page .nav {padding-top: 15px;}
+            .showcase-page .nav a {font-size: 18px;}
         }
 
     @media only screen and (max-width: 1100px) {
-            .contact-me .sidenav .closebtn {
+            .contact-me .nav .closebtn {
                 padding: 0;
                 padding-right: 50px;
                 font-size: 50px;
@@ -377,12 +429,12 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .contact-me .sidenav {padding-top: 15px;}
-            .contact-me .sidenav a {font-size: 18px;}
+            .contact-me .nav {padding-top: 15px;}
+            .contact-me .nav a {font-size: 18px;}
         }
 
     @media only screen and (max-width: 1100px) {
-            .resume-page .sidenav .closebtn {
+            .resume-page .nav .closebtn {
                 padding: 0;
                 padding-right: 50px;
                 font-size: 50px;
@@ -398,8 +450,29 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .resume-page .sidenav {padding-top: 15px;}
-            .resume-page .sidenav a {font-size: 18px;}
+            .resume-page .nav {padding-top: 15px;}
+            .resume-page .nav a {font-size: 18px;}
+        }
+
+    @media only screen and (max-width: 1100px) {
+            .survey-page .nav .closebtn {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 50px;
+                text-align: center;
+            }
+        
+            .survey-page span{
+                font-size: 45px;
+                position: fixed;
+                left: 2%;
+                z-index: 10000;
+            }
+        }
+
+    @media screen and (max-height: 450px) {
+            .survey-page .nav {padding-top: 15px;}
+            .survey-page .nav a {font-size: 18px;}
         }
 /*----------------------------------------Ids and classes---------------------------------------*/
 
@@ -444,7 +517,7 @@ nav {
 }
 
 
-/*aboutme*/
+/*about-me*/
 
 #Text {
     position: absolute;
@@ -1016,6 +1089,122 @@ main.container {
     right: 360px;
 }
 
+/*survey-page*/
+
+.survey-page body {
+  font-family: homizio;
+  color: #e8eeef;
+}
+
+.survey-page form {
+ font-family: homizio;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #404142;
+  border-radius: 8px;
+}
+
+.survey-page h1 {
+ font-family: homizio;
+ margin: 0 0 30px 0;
+ text-align: center;
+ color: #e8eeef;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.survey-page select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.survey-page button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.survey-page fieldset {
+  margin-bottom: 30px;
+  border: none;
+  color: #e8eeef;
+}
+
+.survey-page legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.survey-page label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.survey-page label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.survey-page .number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .survey-page  form {
+    max-width: 480px;
+  }
+}
+
     @media only screen and (max-width: 1279px) {
         .resume-page header { font-size: 2em;
                               text-align: center;}
@@ -1042,6 +1231,7 @@ main.container {
                             margin: 0;
                             padding: 0;}
         }
+
 
     @media all and (max-width: 840px) { 
         .main .container {padding: 0 30px;
@@ -1202,6 +1392,30 @@ body.frontpage {
     position: fixed;
 
     background: url("assets/mech2.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+                    z-index: -1000;
+    background-position: center 0%;
+}
+
+/*survey-page*/
+
+.survey-page .background {
+    margin: 0;
+    padding: 0;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    
+    
+    position: fixed;
+
+    background: url("assets/blackbg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
