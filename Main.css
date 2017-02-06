@@ -779,7 +779,7 @@ main.container {
     height: auto;
     margin: 4em 18vw;
     padding: 1em;
-    z-index: -1000;
+    z-index: 1000;
 }
 
 .contact-me header {
@@ -789,7 +789,7 @@ main.container {
     padding: 0;
     text-align: center;
     left: -5%;
-    z-index: -1000;
+    z-index: 1000;
     
     position: relative;
     display: block;
@@ -802,7 +802,7 @@ main.container {
     color: #ffffff;
     z-index: 2000;
     padding: 0;
-    z-index: -1000;
+    z-index: 1000;
     
     position: relative;
     display: block;
@@ -848,6 +848,11 @@ main.container {
   width:4em;
   height:auto;
   top: 50%;
+}
+
+.contact-me article section a{
+    color: #ffffff;
+    z-index: 200000;
 }
 
     @media screen and (max-width: 1279px) {
