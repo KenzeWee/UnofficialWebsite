@@ -30,54 +30,116 @@
         </ul>
     </nav> 
     
-   <form action="index.html" method="post">
+   <form>
       
         <h1>Survey</h1>
         
         <fieldset>
-          <legend><title class="number">1</title>Your basic info</legend>
-          <label for="name">*Name:</label>
-          <input type="text" id="name" names="user_name" required>
+          <legend><title class="number">1</title>Basic info</legend>
+          <label for="name">Name:</label>
+          <required id="output1">Fill in this field</required>
+          <input type="text" id="name" names="name">
           
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
+          <label for="email">Email:</label>
+          <required id="output2">Fill in this field</required>
+          <input type="email" id="email" name="email">
           
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
+          <label for="phoneno">Phone number:</label>
+          <required id="output3">Fill in this field</required>
+          <input type="phoneno" id="phoneno" name="phoneno">
           
           <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
+          <input type="radio" id="over_13" value="under_13" name="age"><label for="under_13" class="light">Under 20</label><br>
+          <input type="radio" id="over_13" value="20to30" name="age"><label for="over_13" class="light">20 to 30</label><br>                      <input type="radio" id="over_13" value="over30" name="age"><label for="over_13" class="light">Over 30</label>
+            
+          <br><br>     
+          <label>Experience or interest in:</label>
+          <input type="checkbox" id="1a" value="interestdesign" name="interest"><label class="light" for="design">Graphic design</label><br>
+          <input type="checkbox" id="1b" value="interestweb" name="interest"><label class="light" for="Web">Web development</label><br>
+          <input type="checkbox" id="1c" value="interestnil" name="interest"><label class="light" for="nil">Neither</label>
         </fieldset>
         
         <fieldset>
           <legend><title class="number">2</title>Feedback</legend>
-          <label for="bio">Biography:</label>
-          <textarea id="bio" name="user_bio"></textarea>
+          <label for="feedback"><required>*</required>Was there any content, design or navigation issues?</label>
+          <required id="output4">Fill in this field</required>
+          <textarea id="feedback" name="feedback"></textarea>
+          
+          <br>    
+          <label>Overall, was my site:</label>
+          <input id="2a" type="checkbox" value="interest_design" name="nterest"><label class="light" for="design">Creative</label><br>
+          <input type="checkbox" id="2b" value="interest_business" name="interest"><label class="light" for="business">Artistic</label><br>
+          <input type="checkbox" id="2c" value="interest_business" name="interest"><label class="light" for="business">Appealing</label<br><br> <input type="checkbox" id="2d" value="interest_business" name="interest"><label class="light" for="business">Stylish</label><br>
+          <input type="checkbox" id="2e" value="interest_business" name="interest"><label class="light" for="business">Fuctional</label<br><br> <input type="checkbox" id="2f" value="interest_business" name="interest"><label class="light" for="business">Innovative</label><br>
         </fieldset>
-        <fieldset>
-        <label for="job">Job Role:</label>
-        <select id="job" name="user_job">
-          <optgroup label="Web">
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="php_developor">PHP Developer</option>
-            <option value="python_developer">Python Developer</option>
-            <option value="rails_developer"> Rails Developer</option>
-            <option value="web_designer">Web Designer</option>
-            <option value="WordPress_developer">WordPress Developer</option>
-          </optgroup>
-       
-        </select>
-        
-          <label>Interests:</label>
-          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-        
-        </fieldset >
-        <button type="submit">Sign Up</button>
+
+        <button type="button" id="output5" onclick="checkinput()">Submit</button>
       </form>
     
+    <script>
+    function checkinput() {
+        var check1 = false;
+        var check2 = false;
+        var check3 = false;
+        var check4 = false;
+        var x, text;
+        x = document.getElementById("name").value;
+        if(x == "" || x == null) {
+            document.getElementById('output1').style.display = "block";
+            check1 = false;
+        } 
+        else {
+            document.getElementById('output3').style.display = "none";
+            check1 = true;
+        }
+        
+        var y, text;
+        y = document.getElementById("email").value;
+        if(y == "" || y == null) {
+            document.getElementById('output2').style.display = "block";
+            check2 = false;
+        } 
+        else {
+            document.getElementById('output3').style.display = "none";
+            check2 = true;
+        }
+        
+        var z, text;
+        z = document.getElementById("phoneno").value;
+        if(z == "" || z == null) {
+            document.getElementById('output3').style.display = "block";
+            check3 = false;
+        } 
+        else {
+            document.getElementById('output3').style.display = "none";
+            check3 = true;
+        }
+        
+        var f, text;
+        f = document.getElementById("feedback").value;
+        if(f== "" || f == null) {
+            document.getElementById('output4').style.display = "block";
+            check4 = false;
+        } 
+        else {
+            document.getElementById('output4').style.display = "none";
+            check4 = true;
+        }
+        
+        if(check1==true && check2==true && check3==true && check4==true) {
+            document.getElementById("output5").innerHTML="Thank you for taking part in this survey!";
+            document.getElementById("output5").style.color="#ffffff";
+            document.getElementById("name").value = null;            document.getElementById("email").value = null;            document.getElementById("phoneno").value = null;            document.getElementById("feedback").value = null;
+            document.getElementById("1a").checked = false;            document.getElementById("1b").checked = false;            document.getElementById("1c").checked = false;            document.getElementById("2a").checked = false;            document.getElementById("2b").checked = false;            document.getElementById("2c").checked = false;
+            document.getElementById("2d").checked = false;            document.getElementById("2e").checked = false;            document.getElementById("2f").checked = false;
+        } 
+        else {
+            document.getElementById("output5").innerHTML="Please fill in the mandatory fields.";
+            document.getElementById("output5").style.color="#FF0000";
+        }
+    }
+    </script>
+
     <script src="./about-me.js"></script>
     <script src="./navbar.js"></script>
 </body>

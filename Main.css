@@ -1113,15 +1113,13 @@ main.container {
 }
 
 input[type="text"],
-input[type="password"],
+input[type="phoneno"],
 input[type="date"],
 input[type="datetime"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -1168,6 +1166,7 @@ input[type="checkbox"] {
   margin-bottom: 30px;
   border: none;
   color: #e8eeef;
+  font-size: 1em;
 }
 
 .survey-page legend {
@@ -1178,6 +1177,7 @@ input[type="checkbox"] {
 .survey-page label {
   display: block;
   margin-bottom: 8px;
+  font-size: 1em;
 }
 
 .survey-page label.light {
@@ -1187,7 +1187,7 @@ input[type="checkbox"] {
 
 .survey-page .number {
   background-color: #5fcf80;
-  color: #fff;
+  color: #ffffff;
   height: 30px;
   width: 30px;
   display: inline-block;
@@ -1199,9 +1199,20 @@ input[type="checkbox"] {
   border-radius: 100%;
 }
 
+required{
+    color: #ff0000;
+    display: none;
+}
+
+sub{
+    color: #ffffff;
+    display: none;
+}
+
+
 @media screen and (min-width: 480px) {
-  .survey-page  form {
-    max-width: 480px;
+  .survey-page form {
+    max-width: 450px;
   }
 }
 
