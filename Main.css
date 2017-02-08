@@ -197,7 +197,7 @@ nav {
 .contact-me .nav .closebtn {
     left: 93%;
     position: absolute;
-    bottom: 90%;
+    top: auto;
     font-size: 60px;
 }
 
@@ -233,7 +233,7 @@ nav {
     font-size: 45px;
     position: fixed;
     right: 95%;
-    bottom: 91%;
+    top: 10%;
     z-index: 10000;
     opacity: 10%;
 }
@@ -429,7 +429,8 @@ nav {
         }
 
     @media screen and (max-height: 450px) {
-            .contact-me .nav {padding-top: 15px;}
+            .contact-me .nav {padding-top: 15px; 
+                              overflow: none;}
             .contact-me .nav a {font-size: 18px;}
         }
 
@@ -774,9 +775,10 @@ main.container {
 .contact-me{
     text-align: center;
 }
+
 .contact-me article {
     width: 70vw;
-    height: auto;
+    height: 39vw;
     margin: 4em 18vw;
     padding: 1em;
     z-index: 1000;
@@ -852,7 +854,6 @@ main.container {
 
 .contact-me article section a{
     color: #ffffff;
-    z-index: 200000;
 }
 
     @media screen and (max-width: 1279px) {
