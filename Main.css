@@ -52,7 +52,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -82,12 +81,11 @@ nav {
     right: 95%;
     top: 10%;
     z-index: 10000;
-    opacity: 10%;
 }
 
 .about-me span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 /*showcase-page nav bar*/
@@ -103,7 +101,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -132,13 +129,12 @@ nav {
     position: fixed;
     right: 95%;
     top: 10%;
-    opacity: 10%;
     z-index: 10;
 }
 
 .showcase-page span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 /*art-page nav bar*/
@@ -154,7 +150,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -184,12 +179,11 @@ nav {
     right: 95%;
     bottom: 91%;
     z-index: 10;
-    opacity: 10%;
 }
 
 .art-page span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 /*contact-me nav bar*/
@@ -205,7 +199,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -235,12 +228,11 @@ nav {
     right: 95%;
     top: 10%;
     z-index: 10000;
-    opacity: 10%;
 }
 
 .contact-me span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 /*resume-page nav bar*/
@@ -256,7 +248,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -286,12 +277,11 @@ nav {
     right: 95%;
     bottom: 91%;
     z-index: 10000;
-    opacity: 10%;
 }
 
 .resume-page span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.8;
 }
 
 /*survey-page nav bar*/
@@ -307,7 +297,6 @@ nav {
     height: 50px;
     width: auto;
     z-index: 10000;
-    display: relative;
     color: #f1f1f1;
 }
 
@@ -336,13 +325,12 @@ nav {
     position: fixed;
     right: 95%;
     top: 10%;
-    opacity: 10%;
     z-index: 10;
 }
 
 .survey-page span:hover {
     color: #f1f1ff;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
   
@@ -610,8 +598,7 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(
     startColorstr='#00000000',
     endColorstr='#00000000',
-    GradientType=1
-  6);
+    GradientType=16);
 }
 
     @media only screen and (max-width: 1279px) {
@@ -778,7 +765,7 @@ main.container {
 
 .contact-me article {
     width: 70vw;
-    height: 39vw;
+    height: 41.5vw;
     margin: 4em 18vw;
     padding: 1em;
     z-index: 1000;
@@ -1584,5 +1571,10 @@ body.frontpage {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.contact-page body {
+    max-height: 100%;
+    overflow-y: hidden;
 }
 
