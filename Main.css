@@ -534,7 +534,7 @@ nav {
     height: auto;
 }
 
-#profile-pic img {
+#profile-pic img{
     margin: auto;
     width: auto;
     height: 5em;
@@ -550,7 +550,7 @@ nav {
 
 #profile-pic:hover > img {
   filter: brightness(160%);
-  filter: blur(0.4px);
+  animation-play-state: running;
 }
 
 .about-me{
